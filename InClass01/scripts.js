@@ -1,3 +1,3 @@
-<script>
-document.getElementById("demo").innerHTML = "Hello JavaScript!";
-</script>
+function myFunction() {
+   document.getElementById("demo").innerHTML = "How are you?";
+}
