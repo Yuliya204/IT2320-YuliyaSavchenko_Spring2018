@@ -1,8 +1,14 @@
 <html>
     <body>
-            <button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+            <button onclick="document.getElementById('date').innerHTML=Date()">Display Date</button>
+            <button onclick="document.getElementById('date').innerHTML=d.toDateString()">Display Date</button>
+            <button onclick="document.getElementById('date').innerHTML=Date()">Display Date</button>
 
-            <p id="demo"></p>
+            <p id="date"></p>
+            <script>
+                    document.getElementById("demo").innerHTML =
+                    new Date("2015-03-25");
+                    </script>
 
 
     </body>
