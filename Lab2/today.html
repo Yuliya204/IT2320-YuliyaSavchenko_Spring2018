@@ -1,15 +1,18 @@
 <html>
     <body>
             <button onclick="displayDate()">Display Date</button>
-
+            <p id="date"></p>
             <script>
-                var Date = ShortDate;
+                var d = new Date();
+                    var curr_date = d.getDate();
+                    var curr_month = d.getMonth() + 1;
+                    var curr_year = d.getFullYear();
                 function displayDate(){
                     document.getElementById("date").innerHTML = Date();    
                 }
                     </script>
-                   
- <p id="date"></p>
+    
+                    document.write(curr_year + "-" + curr_month + "-" + curr_date);
 
     </body>
 </html>
