@@ -1,15 +1,15 @@
 <html>
     <body>
-            <button onclick="document.getElementById('date').innerHTML=Date()">Display Date</button>
-            <button onclick="document.getElementById('date').innerHTML=d.toDateString()">Display Date</button>
-            <button onclick="document.getElementById('date').innerHTML=Date()">Display Date</button>
+            <button onclick="displayDate()">Display Date</button>
 
-            <p id="date"></p>
             <script>
-                    document.getElementById("demo").innerHTML =
-                    new Date("2015-03-25");
+                var Date = ShortDate;
+                function displayDate(){
+                    document.getElementById("date").innerHTML = Date();    
+                }
                     </script>
-
+                   
+ <p id="date"></p>
 
     </body>
 </html>
