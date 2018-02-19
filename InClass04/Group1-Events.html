@@ -45,20 +45,8 @@
 </head>
 
 <body>
-        <div onmouseover="mOver(this)" onmouseout="mOut(this)" 
-        style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
-        Mouse Over Me</div>
-        
-        <script>
-        function mOver(obj) {
-            obj.innerHTML = "Thank You"
-        }
-        
-        function mOut(obj) {
-            obj.innerHTML = "Mouse Over Me"
-        }
-        </script>
-    <p> Add an event to the paragraph, so it changes the 
+        <p id = "demo">
+        Add an event to the paragraph, so it changes the 
 
             color of the font for the paragraph element 
         
@@ -66,14 +54,29 @@
         
             over the paragraph and then to red when 
         
-            they roll their mouse out of the paragraph. </p>
+            they roll their mouse out of the paragraph.</p>
+        
+        <script>
+         document.getElementById("demo").onmouseover = function() {mouseOver()};
+         document.getElementById("demo").onmouseout = function() {mouseOut()};   
+       function mouseOver() {
+           document.getElementById("demo").style.color = "green";
+        }
+        
+        function mouseOut() {
+            document.getElementById("demo").style.color = "red";
+        }
+        </script>
 
+<button onclick="displayDate()">Click the button to display the date.</button>
+<p id="date"></p>
+<script>
 
-
-<p>Click the button to display the date.</p>
-
-
-
+function displayDate(){
+document.getElementById("date").innerHTML = new Date();   
+}
+</script>
+    
 </body>
 
 </html> 
