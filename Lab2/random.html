@@ -6,9 +6,20 @@
 <p id="random"></p>
 
 <script>
- 
-document.getElementById("random").innerHTML =
-Array.from({length: 100}, () => Math.floor(Math.random() * 100));
+ var Random = new Array (100);
+ var i;
+ for (i = 0; i < 100; i++)
+ {
+     var x = Math.floor((Math.random()*10) + 1);
+    Random[i] = Math.floor(Math.random() * 100);
+
+ }
+ i = 0;
+ while(i<100)
+ {
+document.write("Random[" + i +"] = " + Random[i] + "<br>");
+i++;
+ }
 </script>
 
 </body>
