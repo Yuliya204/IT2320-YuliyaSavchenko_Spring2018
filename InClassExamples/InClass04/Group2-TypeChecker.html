@@ -22,11 +22,18 @@
     <style>
     body { font-size: 30px; }
     </style>
-    
-</head>
+    <script>
+ function checkType(){
+     var valueType = typeof eval(document.getElementById('valueToCheck').value);
+     //document.getElementById('typeInfo').innerHTML = "The value is: " + valueType;
+ } 
+ </script>  
+</head> 
+
 <body>
 <h1>Check Type</h1>
-Value: <input type="text" id="valueToCheck"> <input type="button" value="Check Type">
+Value: <input type="text" id="valueToCheck"> 
+<input type="button" value="Check Type" onclick="checkType()"><br><br>;
 <span id="typeInfo"> </span>
 </body>
 </html> 

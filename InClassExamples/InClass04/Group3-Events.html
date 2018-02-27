@@ -21,10 +21,20 @@
     <style>
     body { font-size: 30px; }
     </style>
+    <script>
+   // window.onload = function() {
+       // document.getElementById('text ToChange').innerHTML = "The page just loaded";
+    //}
+    function myFunc() {
+
+     document.getElementById('textToChange').innerHTML = "The page just loaded";
+    }
+    window.onload = myFunc;
+    </script>
 </head>
 <body>
 
-<p>Original text.</p>
+<p id="textToChange">Original text.</p>
 
 </body>
 </html> 

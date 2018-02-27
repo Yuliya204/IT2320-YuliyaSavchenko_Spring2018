@@ -32,15 +32,20 @@
         restaurantName: "Tri-C Cafeteria!",
         streetAddr: "11000 West Pleasant Valley Road",
         city: "Parma",
-        fullAddress: function() {
+        state: "Ohio",
+        zip: 44130,
+        phone: "216-987-6000",
+        websiteUrl: "www.tri-c.edu",
+        getFullAddress: function() {
             // need to finish concatenating values
-            return this.restaurantName + ", " + this.streetAddr + ", " + this.city;
+            return this.restaurantName + ", " + this.streetAddr + ", " + this.city + "," + this.state + "," + this.zip;
         },
         makeReservations: function() {
             // need to finish the output
             document.getElementById("restaurantOutput").innerHTML = "Thank you for " +
                 "making reservations at " + this.restaurantName;
-        }
+        },
+        getFullAddress: ""
     };
     </script>
 </head>
