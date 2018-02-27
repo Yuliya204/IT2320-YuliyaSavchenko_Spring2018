@@ -1,8 +1,9 @@
 
 <!-- 
     Resources: 
-    https://www.w3schools.com/js/js_events.asp
-    https://www.w3schools.com/js/js_htmldom_css.asp
+    https://www.w3schools.com/js/js_arrays.asp
+    https://www.w3schools.com/js/js_array_methods.asp
+    https://www.w3schools.com/js/js_array_sort.asp
 -->
 
 <html>
@@ -36,7 +37,12 @@
     function outputSortedArray() {
         var sortedArray = itemsArray.slice();
         // sort sortedArray
+<<<<<<< HEAD
 sortedArray.sort();
+=======
+        sortedArray.sort();
+
+>>>>>>> 2e745ad6695b6e800e611e302f5af4649ed71f60
         // display the array (use outputArray() as an example)
         var output = "";
         for (var i in sortedArray) {
@@ -48,7 +54,11 @@ sortedArray.sort();
 </head>
 <body>
 <h1>Add items to the array</h1>
+<<<<<<< HEAD
 New Item: <input type="text" id="newItem"> <input type="button" value="Add Item" onklick"addItem()">
+=======
+New Item: <input type="text" id="newItem"> <input type="button" value="Add Item" onclick="addItem()">
+>>>>>>> 2e745ad6695b6e800e611e302f5af4649ed71f60
 <h2>Unsorted Array:</h2>
 <span id="unsortedItems"> </span>
 <h2>Sorted Array:</h2>

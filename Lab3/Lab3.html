@@ -21,7 +21,8 @@ function addItem() {
 var newAmount = document.getElementById('newAmount').value;
 //1. Add the value of newAmount to the running total totalAmount. Tip: Use parseFloat()
 
-totalAmount = parseFloat(totalAmount) + parseFloat(newAmount);
+
+    totalAmount = parseFloat(totalAmount) + parseFloat(newAmount);
 
 var itemDescription = document.getElementById('newItem').value;
 
@@ -88,6 +89,7 @@ Amount: <br><input type="text" id="newAmount">
 
 Total: $<span id="totalAmountBeforeTax"></span><br>
 
+    
 Tax: $<span id="totalTax"></span><br>
 
 Total with Tax: $<span id="totalAfterTax"></span>
