@@ -23,19 +23,6 @@
     body { font-size: 30px; }
     </style>
     <script>
-<<<<<<< HEAD
- function checkType(){
-     var valueType = typeof eval(document.getElementById('valueToCheck').value);
-     //document.getElementById('typeInfo').innerHTML = "The value is: " + valueType;
- } 
- </script>  
-</head> 
-
-<body>
-<h1>Check Type</h1>
-Value: <input type="text" id="valueToCheck"> 
-<input type="button" value="Check Type" onclick="checkType()"><br><br>;
-=======
     function checkType() {
         var value = eval(document.getElementById('valueToCheck').value);
         var valueType = typeof(value);
@@ -69,7 +56,6 @@ Value: <input type="text" id="valueToCheck">
 <h1>Check Type</h1>
 Value: <input type="text" id="valueToCheck"> 
 <input type="button" value="Check Type" onclick="checkType()"><br><br>
->>>>>>> 2e745ad6695b6e800e611e302f5af4649ed71f60
 <span id="typeInfo"> </span>
 </body>
 </html> 
