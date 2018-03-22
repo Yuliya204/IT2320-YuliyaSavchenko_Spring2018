@@ -1,0 +1,60 @@
+<html>
+
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+
+$("p").eq(1).css("background-color", "yellow");
+
+// using eq we can select by specifying the index number
+
+$("p").eq(1).parent().children("h1").css({"color": "green", "border": "2px solid blue"});
+
+// here we selecting the paragraf at index and getting the parent for that which is body and getting the childs of the body of type h1
+
+$("#favoriteForm").submit(function(){  // 2. if the user clicks the submit button and the value of favoriteFood is empty, display an error message 
+
+if($("#favoriteFood").val()=='');{ //message stating "You must enter a favorite food" in the span following favoriteFood using the next() method.
+
+$("#favoriteFood").next().text( "You must enter a favorite food" );
+
+return false;
+
+}
+
+});
+
+});
+
+</script>
+
+</head>
+
+<body>
+
+<h1>Lab 5</h1>
+
+<p>My name is Al.</p>
+
+<p>Al Dente.</p>
+
+<p>I live in the land of Pasta.</p>
+
+<p>My best friend is Cheese.</p>
+
+<form id="favoriteForm" name="favoriteForm">
+
+Enter your favorite food <input id="favoriteFood" name="favoriteFood" type="text" id="favorite"> <span></span>
+
+<br><br><input type="submit" value="Submit">
+
+
+</form>
+
+</body>
+
+</html>
