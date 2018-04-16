@@ -1,0 +1,18 @@
+ <levels>
+ <level1>
+ <type>seasonal</type>
+ <cost>35.00</cost>
+</level1>
+ <level2>
+ <type>individual</type>
+ <cost>50.00</cost>
+</level2>
+ <level3>
+ <type>family</type>
+ <cost>65.00</cost>
+</level3>
+ <level4>
+ <type>contributing</type>
+ <cost>70.00</cost>
+</level4>
+</levels>

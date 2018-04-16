@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>First Form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+$(document).ready(function(){
+    $("#1").click(function(){
+        $("#membershipLevels").load("membership.xml");
+    });
+});
+    </script>
+    <script>
+        // comment to see if push worked
+         $(document).ready(function () {
+             $("#2").click(function () {
+                 $("#members").load("members.json");
+             });
+         });
+    </script>
+</head>
+<body>
+<h1>Membership Levels</h1>
+<span id="membershipLevels"></span>
+    <button id="1">Membership Levels</button>
+<h1>Current Members</h1>
+<span id="members"></span>
+    <button id="2">Current Members</button>
+    </body>
+</html>

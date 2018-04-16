@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<questions>
+<question id="1">
+<questiontext>Describe the purpose of AJAX. What advantage does AJAX provide over a traditional HTML form submit.</questiontext>
+<answer id="answer1">
+  The ajax() method is used to perform an AJAX (asynchronous HTTP) request.
+  AJAX is the art of exchanging data with a server, and updating parts of a web page - without reloading the whole page.
+  AJAX is a developer's dream, because you can:
+
+  Update a web page without reloading the page
+  Request data from a server - after the page has loaded
+  Receive data from a server - after the page has loaded
+  Send data to a server - in the background
+</answer>
+</question>
+<question id="2">
+<questiontext>Describe the role of JSON and XML with AJAX. </questiontext>
+<answer id="answer2">
+  For AJAX applications, JSON is faster and easier than XML:
+
+  Using XML
+
+  Fetch an XML document
+  Use the XML DOM to loop through the document
+  Extract values and store in variables
+
+  Using JSON
+
+  Fetch a JSON string
+  JSON.Parse the JSON string</answer>
+</question>
+<question id="3">
+<questiontext>If you had to choose just one, which would you choose: XML or JSON? Why? </questiontext>
+<answer id="answer3">I would choose JSON because:
+JSON doesn't use end tag
+JSON is shorter
+JSON is quicker to read and write
+JSON can use arrays
+The biggest difference is:
+ XML has to be parsed with an XML parser. JSON can be parsed by a standard JavaScript function.
+ XML is much more difficult to parse than JSON.
+JSON is parsed into a ready-to-use JavaScript object.
+</answer>
+</question>
+
+</questions>
