@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script>
+
+        function getArea() {
+            document.getElementById("area").innerHTML = areaRectangle(20, 30);
+        }
+       // window.onload = new function() {
+			var areaRectangle = function (width, height) {
+				var areaRect = width * height;
+				arearect = parseFloat(areaRect.toFixed(2));
+				return areaRect;
+			}
+       // }
+    </script>
+</head>
+<body>
+    <input type="button" onclick="getArea()" value="Get Area" />
+    <div id="area"> </div>
+</body>
+</html>

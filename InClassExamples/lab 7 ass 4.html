@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var cars = ["Ford", "Chevy", "GMC"];
+console.log('cars:', cars);
+var text = "";
+console.log('text:', text);
+var i;
+console.log('i:', i);
+for (i = 0; i <= 3; i++) {
+    text += cars[i] + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
